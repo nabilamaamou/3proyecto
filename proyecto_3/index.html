@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<body>
+ 
+<h2>Quizz</h2>
+<!-- quiz-container -->
+<div id="quiz-container">
+    <!-- question container -->
+<div class="questions">
+    <h2 id="question"></h2>
+<ol type="A">
+    <h3 id="demo"></h3>
+    <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+    <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+    <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+    <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+</ol>
+<h4 id="stat"></h4>
+</div>
+<div class="buttons">
+    <input type="button" onclick="previous()" value="<<">
+<input type="button" onclick="next()" value=">>">
+</div>
+
+</div>
+<p id="answers"></p>
+<button onclick="AllAnswer()">Answers</button>
+<script>
+
+var i = 0;
+var x;
+var num=0;
+let txt = "";
+displayquestion(i);
+
+function displayquestion(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", "data.xml", true);
+    xmlhttp.send();
+}
+
+function myFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x = xmlDoc.getElementsByTagName("question");
+    question.innerHTML = 'Q.'+(i+1)+' '+x[i].getElementsByTagName("wording")[0].childNodes[0].nodeValue;
+    option0.innerHTML = x[i].getElementsByTagName("choice")[0].childNodes[0].nodeValue;
+    option1.innerHTML = x[i].getElementsByTagName("choice")[1].childNodes[0].nodeValue;
+    option2.innerHTML = x[i].getElementsByTagName("choice")[2].childNodes[0].nodeValue;
+    option3.innerHTML = x[i].getElementsByTagName("choice")[3].childNodes[0].nodeValue;
+    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+x.length;
+}
+
+function next() {
+if (i < x.length-1) {
+  i++;
+  displayquestion(i);
+  }
+}
+
+function previous() {
+if (i > 0) {
+  i--;
+  displayquestion(i);
+  }
+}
+function next() {
+if (i < x.length-1) {
+  i++;
+  displayquestion(i);
+  }
+}
+
+function AllAnswer() {
+    
+    for (num=0 ; num < x.length;num++)
+    
+    
+    txt += x[num].getElementsByTagName("answer")[0].childNodes[0].nodeValue;
+    txt += "<br><br>";
+    document.getElementById("answers").innerHTML = txt;
+}
+
+</script>

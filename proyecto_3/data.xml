@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [
+  <!ELEMENT test (question+)>
+  <!ELEMENT question (wording,choices+,answer)>
+  <!ELEMENT wording (#PCDATA)>
+  <!ELEMENT choice (#PCDATA)>
+  <!ELEMENT answer (#PCDATA)>
+  
+  <!ATTLIST question id CDATA #REQUIRED>
+  <!ATTLIST choice correct (yes|no) 'no'>
+]>
+<test>
+  <question>
+    <wording>¿La capital de México es?</wording>
+    <choices>
+      <choice>Repuesta 1</choice>
+      <choice>México</choice>
+      <choice>El cabo</choice>
+      <choice>México</choice>
+      <answer>1)México-----</answer>
+    </choices>
+  </question>
+  <question>
+    <wording>Quien fue el primer gobernante del México independiente?</wording>
+    <choices>
+      <choice>Repuesta 1</choice>
+      <choice>El virrey Pedro de Mendoza</choice>
+      <choice>Juan Escutia</choice>
+      <choice>Agustín de Iturbide</choice>
+      <answer>2)Francisco I madero------</answer>
+    </choices>
+  </question>
+  <question>
+    <wording>¿Cuánto es 8×8?</wording>
+    <choices>
+      <choice>¿Cuánto es 8×8?</choice>
+      <choice>4</choice>
+      <choice>88</choice>
+      <choice>16</choice>
+      <answer>3)64-------</answer>
+      
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Los números son estudiados por?</wording>
+    <choices>
+      <choice>La biología</choice>
+      <choice>Las Matemáticas</choice>
+      <choice>La sociología</choice>
+      <choice>La medicina</choice>
+      <answer>4)Las Matemáticas------</answer>
+    
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Qué le pareció el servicio de nuestros empleados?</wording>
+    <choices>
+      <choice>Repuesta 1</choice>
+      <choice>Un radio</choice>
+      <choice>Una televisión</choice>
+      <choice>Un megáfono</choice>
+      <answer>5)Un tocadiscos------</answer>
+    
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>6)Un cocodrilo-----------</answer>
+     ¡
+    </choices>
+  </question> 
+  <question>
+    <wording>¿Cuánto es 8×8?</wording>
+    <choices>
+      <choice>¿Cuánto es 8×8?</choice>
+      <choice>4</choice>
+      <choice>88</choice>
+      <choice>16</choice>
+      <answer>7)64---------</answer>
+      
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Los números son estudiados por?</wording>
+    <choices>
+      <choice>La biología</choice>
+      <choice>Las Matemáticas</choice>
+      <choice>La sociología</choice>
+      <choice>La medicina</choice>
+      <answer>8)Las Matemáticas---------</answer>
+    
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Qué le pareció el servicio de nuestros empleados?</wording>
+    <choices>
+      <choice>Repuesta 1</choice>
+      <choice>Un radio</choice>
+      <choice>Una televisión</choice>
+      <choice>Un megáfono</choice>
+      <answer>9)Un tocadiscos-----------</answer>
+    
+    </choices>
+  </question> 
+    <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>10)Un cocodrilo-------</answer>
+ 
+    </choices>
+  </question>   
+      <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>11)Un cocodrilo-------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>12)Un cocodrilo---------</answer>
+  
+    </choices>
+  </question> 
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>13)Un cocodrilo--------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>14)Un cocodrilo---------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>15)Un cocodrilo---------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>16)Un cocodrilo--------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>17)Un cocodrilo---------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>18)Un cocodrilo-------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>19)Un cocodrilo----------</answer>
+  
+    </choices>
+  </question>
+        <question>
+    <wording>¿Qué animales son mamíferos?</wording>
+    <choices>
+      <choice>Un cocodrilo</choice>
+      <choice>Un gato</choice>
+      <choice>Un perico</choice>
+      <choice>Una higuana</choice>
+      <answer>20)Un cocodrilo------------</answer>
+  
+    </choices>
+  </question>
+  
+</test>
+
+
+
+
